@@ -8,12 +8,25 @@ export default function HomePage() {
       {/* Nav */}
       <nav className="flex items-center justify-between px-8 py-4 border-b border-[#e5e5e0]">
         <span className="font-bold text-lg text-[#211922]">ArtRoom</span>
-        <Link
-          href="/admin"
-          className="text-sm font-medium text-[#62625b] hover:text-[#211922] transition-colors"
-        >
-          先生ログイン
-        </Link>
+        <div className="flex items-center gap-5">
+          <a
+            href="https://www.notion.so/synq-creative/art-room-35308401676c8065a82afe28c1e6fe8e?source=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-sm text-[#62625b] hover:text-[#211922] transition-colors"
+          >
+            使い方ガイド
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" className="opacity-50">
+              <path d="M2 2h8v8M10 2 2 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+          <Link
+            href="/admin"
+            className="text-sm font-medium text-[#62625b] hover:text-[#211922] transition-colors"
+          >
+            先生ログイン
+          </Link>
+        </div>
       </nav>
 
       {/* Hero */}
